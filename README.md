@@ -16,14 +16,14 @@ The component includes custom checkbox styling and selection logic, including a 
 - No external UI libraries required
 
 ## 📁 Project Structure
-src/
-├── app/
-│ ├── page.js
-│ └── globals.js
-└── components/
-  ├── PageCheckboxCard/
-  ├── PageCheckboxCard.jsx
-  └── PageCheckboxCard.module.css
+- src/
+- app/
+- app/page.js
+- app/globals.js
+- components/
+- components/PageCheckboxCard/
+- components/PageCheckboxCard/PageCheckboxCard.jsx
+- components/PageCheckboxCard/PageCheckboxCard.module.css
 
 
 ## 🖼 UI Preview
@@ -32,14 +32,11 @@ Below is the target design for the component:
 
 ## ▶ How to Run
 
-Install dependencies:
-npm install
+Install dependencies: **npm install**
 
-Run the development server:
-npm run dev
+Run the development server: **npm run dev**
 
-Open in browser:
-http://localhost:3000
+Open in browser: **http://localhost:3000**
 
 ## 📌 Notes
 - Components with selection logic must be Client Components, so "use client" is required.
