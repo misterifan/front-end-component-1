@@ -18,12 +18,20 @@ The component includes custom checkbox styling and selection logic, including a 
 ## 📁 Project Structure
 - src/
 - app/
+- app/globals.css
 - app/page.js
-- app/globals.js
+- app/page.module.css
 - components/
-- components/PageCheckboxCard/
-- components/PageCheckboxCard/PageCheckboxCard.jsx
-- components/PageCheckboxCard/PageCheckboxCard.module.css
+- components/button/
+- components/button/button.jsx
+- components/button/button.module.css
+- components/checkboxWithLabel/
+- components/checkboxWithLabel/checkboxWithLabel.jsx
+- components/checkboxWithLabel/checkboxWithLabel.module.css
+- components/SelectionListing/
+- components/SelectionListing/SelectionListing.jsx
+- components/SelectionListing/SelectionListing.module.css
+- components/SelectionListing/useSelectionListingCheckState.js
 
 
 ## 🖼 UI Preview
