@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./SelectionListing.module.css";
-import { useListingCheckState } from "./useListingCheckState";
+import { useSelectionListingCheckState } from "./useSelectionListingCheckState";
 import Button from "@/components/button/button";
 import CheckboxWithLabel from "@/components/checkboxWithLabel/checkboxWithLabel";
 
@@ -10,7 +10,7 @@ export default function SelectionListing({
     items = [],
     onChange = () => { },
 }) {
-    const { allChecked, checkedList, toggleAll, toggleSingle } = useListingCheckState(items);
+    const { allChecked, checkedList, toggleAll, toggleSingle } = useSelectionListingCheckState(items);
 
     const handleToggleAll = () => {
         toggleAll();
