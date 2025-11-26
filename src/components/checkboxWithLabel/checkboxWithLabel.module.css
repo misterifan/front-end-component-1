@@ -24,13 +24,18 @@
     .checkmark {
         height: 23px;
         width: 23px;
-        border: 1px solid #BDBDBD;
+        border: 1px solid #CDCDCD;
         border-radius: 6px;
     }
 
     .checkmark:hover {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-        border: 1px solid #CCCCCC;
+        border: 1px solid #BDBDBD;
+    }
+
+    .checkmark:active {
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18); */
+        box-shadow: 0 4px 12px #2469F633;
+        border: 1px solid #BDBDBD;
     }
 
     /* checked when the .custom-checkbox is selected */
@@ -51,12 +56,32 @@
         display: none;
     }
 
+    input:hover~.checkmark::after {
+        display: block;
+        width: 5px;
+        height: 10px;
+        margin: 2px 7px;
+        border: solid #E3E3E3;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    input:active~.checkmark::after {
+        display: block;
+        width: 5px;
+        height: 10px;
+        margin: 2px 7px;
+        border: solid #878787;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
     input:checked~.checkmark::after {
         display: block;
         width: 5px;
         height: 10px;
         margin: 2px 7px;
-        border: solid white;
+        border: solid #FFFFFF;
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
     }
