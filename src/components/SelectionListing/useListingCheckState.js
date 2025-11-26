@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export function usePageCheckState(items = []) {
+export function useListingCheckState(items = []) {
   const [allChecked, setAllChecked] = useState(false);
   const [checkedList, setCheckedList] = useState(items.map(() => false));
 
